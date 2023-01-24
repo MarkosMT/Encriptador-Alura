@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>Encriptador/Desencriptador</title>
+</head>
+<body>
+
+ <div id="main">       
+     <textarea id="textin" class="texto-in" onclick="limpia()">Ingrese el texto aqui</textarea>
+     <textarea id="textout1" class="texto-out"></textarea>
+     <textarea id="textout2" class="texto-out2"></textarea>
+     <img class="letra" src="images/logo2x.png">
+
+     <button id="encryptButton" class="boton-in">Encriptar</button>
+     <button id="decryptButton" class="boton-out">Desencriptar</button>
+     <button id="limpiar" class="boton-limpia">Limpiar</button>
+
+     <label class="labelout" for="textout">Texto encriptado/desencriptado:</label><br>
+ </div>
+
+  <script>
+      
+    // Obtener los elementos de la página ojo
+    const inputText = document.getElementById('textin');
+    const encryptButton = document.getElementById('encryptButton');
+    const encryptedText = document.getElementById('textout1');
+    const decryptButton = document.getElementById('decryptButton');
+    const decryptedText = document.getElementById('textout2');
+
+     // Función para encriptar el texto
+    function encryptText() {
+      // Obtener el valor del cuadro de texto
+      const text = inputText.value;
+
+      // Encriptar el texto
+      const encrypted = btoa(text);
+
+      // Mostrar el texto encriptado en el cuadro de texto correspondiente
+      encryptedText.value = encrypted;
+
+      document.querySelector(".texto-out").style.backgroundImage="none";
+     }
+
+    // Función para desencriptar el texto
+    function decryptText() {
+      // Obtener el valor del cuadro de texto
+      const encrypted = encryptedText.value;
+
+      // Desencriptar el texto
+      const text = atob(encrypted);
+
+      // Mostrar el texto desencriptado en el cuadro de texto correspondiente
+      decryptedText.value = text;
+     }
+
+    function limpia() {
+     document.getElementById('textin').value='';
+     
+    }
+
+     function limpia2() {
+     document.getElementById('textin').value='Ingrese el texto aqui';
+     document.getElementById('textout1').value='';
+     document.getElementById('textout2').value='';
+   
+    }
+
+    // Asignar las funciones de encriptación y desencriptación a los botones
+    encryptButton.onclick = encryptText;
+    decryptButton.onclick = decryptText;
+
+    document.getElementById('textin').onclick = limpia;
+    document.getElementById('limpiar').onclick = limpia2;
+
+  </script>
+</body>
+</html>

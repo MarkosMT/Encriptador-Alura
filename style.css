@@ -1,0 +1,148 @@
+body {
+position: relative;
+width: 1440px;
+height: 1024px;
+background: #F3F5FC;
+}
+
+.letra{
+ position:absolute;
+ width: 150px;
+ height: 60px;
+ left: 60px;
+ top: 100px;    
+}
+
+.muñeco{
+position: absolute;
+width: 350px;
+height: 345px;
+left: 1000px;
+top: 245px;
+}
+
+.boton-in{
+ position: absolute;
+ width: 228px;
+ height: 67px;
+ left: 300px;
+ top: 600px; 
+ background: #0A3871;
+ border-radius: 24px;
+ color: white;  
+ font-size:20px;  border-color: rgb(13, 71, 161);
+    box-shadow: 0 1px 1px rgba(13, 71, 161, 0.075)inset, 0 0 8px rgba(13, 71, 161,0.6);
+    outline: 0 none;
+
+}
+
+.boton-out{
+ position: absolute;
+ width: 228px;
+ height: 67px;
+ left: 540px;
+ top: 600px;
+ background: lightgray;
+ border-radius: 24px;
+ margin: 0 10px;
+ color: #0A3871;
+ font-size:20px;
+ border-color: rgb(13, 71, 161);
+    box-shadow: 0 1px 1px rgba(13, 71, 161, 0.075)inset, 0 0 8px rgba(13, 71, 161,0.6);
+    outline: 0 none;
+}
+
+.boton-limpia{
+ position: absolute;
+ width: 220px;
+ height: 65px;
+ left: 430px;
+ top: 680px;
+ background: #fff8e1;
+ border-radius: 24px;
+ margin: 0 10px;
+ color: #01579b;
+ font-size:20px;
+ border-color:  #fff8e1;
+    box-shadow: 0 1px 1px rgba(13, 71, 161, 0.075)inset, 0 0 8px rgba(13, 71, 161,0.6);
+    outline: 0 none;
+}
+
+.texto-in{
+position: absolute;
+width: 570px;
+height: 248px;
+left: 240px;
+top: 168px;
+resize: none;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 150%;
+color: #0A3871;
+margin: 20px 0;
+text-align:top;
+background:#F3F5FC;
+box-shadow:none;
+outline:none;
+border: 0;  
+padding:10px;
+}
+
+.texto-out{
+position: absolute;
+width: 375px;
+height: 280px;
+left: 960px;
+top: 80px;
+resize: none;
+background-image:url("images/muneco.png");
+background-repeat: no-repeat;
+background-position: center;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+line-height: 150%;
+color: #0A3871;
+margin: 20px 0;
+border-radius: 24px;
+ border: 0;
+    box-shadow: 0 1px 1px rgba(13, 71, 161, 0.075)inset, 0 0 8px rgba(13, 71, 161,0.6);
+    outline: 0 none;
+padding:30px;
+
+  
+}
+
+.texto-out2{
+position: absolute;
+width: 375px;
+height: 280px;
+left: 960px;
+top: 450px;
+resize: none;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+line-height: 150%;
+color: #0A3871;
+margin: 20px 0;
+border-radius: 24px;
+ border: 0;
+    box-shadow: 0 1px 1px rgba(13, 71, 161, 0.075)inset, 0 0 8px rgba(13, 71, 161,0.6);
+    outline: 0 none;
+padding:30px;
+  
+}
+.labelout{
+position: absolute;
+width: 420px;
+height: 248px;
+left: 960px;
+top: 60px;
+font-size:26px;
+}
+
